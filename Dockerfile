@@ -31,3 +31,13 @@ EXPOSE 3006
 
 # 定義運行應用程式的命令
 CMD ["npm", "start"]
+
+############################################
+# 啟動指令
+
+# build image：
+# docker build -t myclock:1.0 .
+
+# run container：
+# docker run -p 3003:3006 -d myclock:1.0
+# docker run -d -p 3003:3006 --name myclock-container myclock:1.0
